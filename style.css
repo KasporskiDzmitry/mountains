@@ -1,0 +1,1499 @@
+/*====================== general ======================*/
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+}
+
+.section-outer {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.section-inner {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    cursor: pointer;
+    color: #FCFCFC;
+}
+
+button {
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    color: #FCFCFC;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.primary-btn {
+    border: 2px solid #FCFCFC;
+    background: transparent;
+    height: 45px;
+}
+
+.primary-btn:hover {
+    background: #EC5118;
+}
+
+.secondary-btn {
+    background: #EC5118;
+    border: none;
+    height: 50px;
+}
+
+.secondary-btn:hover {
+    background: #cf5204;
+}
+
+.icon {
+    cursor: pointer;
+    border-radius: 20px;
+    width: 35px;
+    height: 35px;
+    position: relative;
+}
+
+.icon:hover {
+    background: #EC5118;
+}
+
+.icon:before {
+    content: url("images/icons/ellipse-icon.png");
+}
+
+.icon:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+/*====================== /general ======================*/
+
+/*====================== header ======================*/
+.section-header {
+    background: url("images/header_bg.jpg") no-repeat 50% 50%;
+    background-size: cover;
+    color: #FCFCFC;
+}
+
+.section-header .section-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.toggleNavBtn {
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    padding-top: 42px;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 1;
+    color: #FCFCFC;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-grow: 2;
+    justify-content: flex-start;
+}
+
+.navbar-nav a {
+    color: #FCFCFC;
+}
+
+.navbar-nav a:hover {
+    color: #EC5118;
+}
+
+.navbar-aside {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-aside__phone {
+    user-select: text;
+    margin-right: 30px;
+    align-self: center;
+}
+
+.navbar-aside__search:after {
+    content: url("images/icons/search-icon.png");
+}
+
+.navbar-aside__profile:after {
+    content: url("images/icons/profile-icon.png");
+}
+
+.section-header-content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.section-header-content__title {
+    color: #FCFCFC;
+    font-size: 98px;
+    line-height: 145px;
+}
+
+.section-header-content__primary-btn-wrapper {
+    width: 170px;
+    margin-top: 50px;
+}
+/*====================== /header ======================*/
+
+/*====================== main ======================*/
+/*=================== [map] ===================*/
+.section-map-content {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 40%;
+}
+
+.section-map-content__title {
+    margin-bottom: 50px;
+}
+
+.section-map-image {
+    align-self: center;
+}
+
+.section-map-image img {
+    width: 100%;
+    height: auto;
+}
+/*=================== /[map] ===================*/
+
+/*================== [tours] ==================*/
+.section-tours .section-inner {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-tours-title {
+    text-align: center;
+}
+
+.section-tours-content {
+    margin-top: 50px;
+    display: flex;
+}
+
+.tour-card {
+    width: 370px;
+}
+
+.tour-card-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding: 25px;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(249, 249, 250, 0) 0%, rgba(249, 249, 250, 0.9) 100%);
+}
+
+.tour-location-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tour-location-wrapper__location:before {
+    content: url("images/location.png");
+    padding-right: 5px;
+}
+
+.tour-location-wrapper__bookmark {
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 1;
+}
+
+.tour-location-wrapper__bookmark:after {
+    content: url("images/icons/bookmark.png");
+}
+
+.tour-location-wrapper__bookmark:hover {
+    background-color: #EC5118;
+}
+
+.tour-info-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.tour-info__heading {
+    font-family: 'Oswald', sans-serif;
+    line-height: 115%;
+}
+
+.tour-info-data-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.tour-info-data-wrapper div {
+    line-height: 115%;
+    color: #061B28;
+}
+
+.tour-info-data__days {
+    border-right: 1px solid #061B28;
+    border-left: 1px solid #061B28;
+}
+
+.tour-info__difficulty {
+    position: relative;
+}
+
+.tour-info__difficulty:before {
+    content: url("images/icons/ellipse-small.png");
+    margin-right: 6px;
+}
+
+.tour-info__difficulty:after {
+    content: url("images/icons/ellips-small-medium.png");
+    position: absolute;
+    left: 7px;
+}
+
+#beluha {
+    background-image: url("images/beluha.jpg");
+}
+
+#elbrus {
+    background-image: url("images/elbrus.jpg");
+}
+
+#kilimanjaro {
+    background-image: url("images/kilimanjaro.jpg");
+}
+
+#kilimanjaro .tour-info__difficulty:after {
+    content: url("images/icons/ellipse-small-easy.png");
+    transform: translateY(-40%);
+}
+
+.section-tour-tours-carousel {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tours-carousel__btn {
+    background: #E6E8EA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+    margin-top: 40px;
+}
+
+.tours-carousel__btn:hover {
+    background-color: #EC5118;
+}
+
+.prev-btn:before {
+    content: url("images/icons/left-arrow.png");
+}
+
+.next-btn:before {
+    content: url("images/icons/right-arrow.png");
+}
+/*================== /[tours] ==================*/
+
+/*================= [russia] =================*/
+.section-russia {
+    background: linear-gradient(0deg, rgba(6, 27, 40, 0.92), rgba(6, 27, 40, 0.92)), url(images/russia_bg.jpg);
+    height: 757px;
+}
+
+.section-russia .section-inner {
+    flex-flow: column;
+    text-align: center;
+    color: #FCFCFC;
+}
+
+.section-russia-subtitle {
+    margin-top: 25px;
+    line-height: 140%;
+}
+
+.section-russia-content__table {
+    width: 100%;
+    margin: 50px 0;
+    border-collapse: collapse;
+}
+
+.section-russia-content__table td {
+    border-bottom: 1px solid #45545E;
+    width: 25%;
+    line-height: 140%;
+    height: 66px;
+}
+
+.section-russia-content__table thead td {
+    height: 30px;
+    color: #A7AEB4;
+}
+
+.section-russia-content__table tbody td {
+    font-size: 22px;
+    height: 66px;
+}
+
+.section-russia-content__primary-btn-wrapper {
+    width: 170px;
+    margin: 0 auto;
+}
+/*================= /[russia] =================*/
+
+/*================== [blog] ==================*/
+.section-blog .section-inner {
+    flex-flow: column;
+    text-align: center;
+}
+
+.section-blog-content {
+    display: flex;
+    text-align: left;
+    margin-top: 60px;
+}
+
+.section-blog-content__list-wrapper {
+    margin-right: 70px;
+}
+
+.section-blog-content__list-item {
+    border-bottom: 1px solid #061B28;
+    color: #061B28;
+    cursor: pointer;
+}
+
+.section-blog-content__list-item:hover {
+    background: #061B28;
+    color: #FCFCFC;
+}
+
+.selected-item {
+    color: #FCFCFC;
+    background: #061B28;;
+}
+
+.section-blog-content__list-item__date {
+    font-size: 14px;
+    line-height: 140%;
+    color: #626F77;
+    margin-bottom: 20px;
+}
+
+.section-blog-content__list-item__title {
+    line-height: 140%;
+}
+
+.section-blog-content__secondary-btn-wrapper {
+    margin-top: 45px;
+}
+
+.section-blog-article__image {
+    margin-bottom: 30px;
+}
+
+.section-blog-article__image img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-content-article__date {
+    line-height: 140%;
+    color: #626F77;
+}
+
+.blog-content-article__title {
+    font-weight: bold;
+    line-height: 140%;
+    color: #061B28;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.blog-content-article__text {
+    line-height: 150%;
+    color: #061B28;
+}
+/*================= /[blog] =================*/
+
+/*================= help ====================*/
+.section-help .section-inner {
+    display: flex;
+    max-width: 100%;
+}
+
+.section-help-content {
+    background: #061B28;
+    color: #FCFCFC;
+    flex-basis: 50%;
+}
+
+.section-help-content__subtitle {
+    margin-bottom: 10px;
+}
+
+.section-help-content__help-form {
+    display: flex;
+    flex-flow: column;
+}
+
+.help-form__input {
+    border: none;
+    border-bottom: 1px solid #45545E;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    outline: none;
+    color: #FCFCFC;
+}
+
+.help-form__input::placeholder {
+    font-size: 16px;
+}
+
+.help-form__input:focus {
+    border-bottom: 1px solid #EC5118;
+}
+
+.help-form__secondary-btn-wrapper {
+    margin-bottom: 25px;
+}
+
+.section-help-image {
+    flex-basis: 50%;
+}
+
+.section-help-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-help-content__agree {
+    font-size: 14px;
+    line-height: 140%;
+    text-align: left;
+}
+/*================== /[help] ==================*/
+
+/*================= [contacts] ================*/
+.section-contacts-content {
+    display: flex;
+}
+
+.section-contacts-content__map {
+    margin-right: 70px;
+}
+
+.section-contacts-content__map img {
+    width: 100%;
+    height: auto;
+}
+
+.section-contacts-content__items {
+    display: flex;
+    flex-flow: column;
+}
+
+.section-contacts-content__items-title {
+    margin-bottom: 20px;
+}
+
+.contact-item__type {
+    color: #061B28;
+    line-height: 150%;
+    margin-bottom: 10px;
+}
+
+.contact-item__content {
+    line-height: 140%;
+    color: #061B28;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.contact-item__content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contact-item__link {
+    margin-right: 32px;
+    cursor: pointer;
+}
+
+.contact-item__link:hover {
+    color: #EC5118;
+}
+/*================= /[contacts] ================*/
+/*===================== /main ====================*/
+
+/*===================== footer ====================*/
+.section-footer {
+    background: #061B28;
+    color: #FCFCFC;
+    height: 120px;
+    display: flex;
+}
+
+.section-footer .section-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*===================== /footer ====================*/
+
+/*===================== MEDIA QUERIES ==============*/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 576px) {
+    button {
+        font-size: 14px;
+    }
+
+    .section-outer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .title {
+        font-family: 'Oswald', sans-serif;
+        font-size: 28px;
+        line-height: 115%;
+        font-weight: bold;
+    }
+
+    /*============== header ==============*/
+    .navbar {
+        display: none;
+    }
+
+    .toggleNavBtn {
+        font-size: 24px;
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    /*============== /header ==============*/
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 0;
+        margin-top: 15px;
+        background: linear-gradient(0deg, rgba(6, 27, 40, 0.92), rgba(6, 27, 40, 0.92));
+        border-radius: 5px;
+    }
+
+    .navbar * {
+        margin-bottom: 10px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-aside {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .navbar-aside__phone {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .section-header-content__title {
+        font-size: 72px;
+        line-height: 100px;
+    }
+    /*============== map ==============*/
+    .section-map .section-inner {
+        padding: 20px 0;
+    }
+
+    .section-map-content__title {
+        text-align: center;
+        margin: 25px 0;
+    }
+
+    .section-map-content__text {
+        text-align: justify;
+        margin-bottom: 25px;
+    }
+    /*============== /map ==============*/
+
+    /*============== tours ==============*/
+    .section-tours .section-inner {
+        padding: 25px 0;
+    }
+
+    .section-tours-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    .tour-card {
+        width: 300px;
+        height: 260px;
+    }
+
+    .tour-card + .tour-card {
+        margin-top: 15px;
+    }
+
+    .tour-info__heading {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .tour-info__heading {
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+
+    .tour-info-data-wrapper div {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .tour-info-data__height {
+        padding-right: 5px;
+    }
+
+    .tour-info-data__days {
+        padding: 0 5px;
+    }
+
+    .tour-info-data__price {
+        padding-left: 5px;
+    }
+
+    .tour-info__difficulty {
+        font-size: 14px;
+    }
+
+    .section-tour-tours-carousel {
+        justify-content: space-around;
+    }
+
+    .section-tour-tours-carousel * {
+        margin: 15px;
+    }
+    /*============== /tours ==============*/
+
+    /*============== russia ==============*/
+    .section-russia {
+        height: 625px;
+    }
+
+    .section-russia .section-inner {
+        padding: 25px 0;
+    }
+
+    .section-russia-subtitle {
+        font-size: 14px;
+    }
+
+    .section-russia-content__table thead td {
+        font-size: 12px;
+    }
+
+    .section-russia-content__table tbody td {
+        font-size: 14px;
+    }
+    /*============== /russia ==============*/
+
+    /*============== blog ==============*/
+    .section-blog .section-inner {
+        padding: 25px 0;
+    }
+
+    .section-blog-content {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .section-blog-content__list-wrapper {
+        order: 2;
+        width: 100%;
+    }
+
+    .section-blog-content__list-item {
+        padding: 10px;
+    }
+
+    .section-blog-content__secondary-btn-wrapper {
+        margin-top: 20px;
+    }
+
+    .section-blog-article {
+        order: 1;
+    }
+
+    .blog-content-article__title {
+        text-align: center;
+    }
+
+    .blog-content-article__text {
+        font-size: 14px;
+        text-align: justify;
+        margin-bottom: 30px;
+    }
+
+    .section-blog-article__image {
+        margin-bottom: 15px;
+    }
+    /*============== /blog ==============*/
+
+    /*============== help ==============*/
+    .section-help {
+        padding: 0;
+    }
+
+    .section-help .section-inner {
+        flex-direction: column;
+    }
+
+    .section-help-content {
+        padding: 10px;
+    }
+
+    .section-help-content__title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .section-help-content__subtitle {
+        font-size: 14px;
+    }
+
+    .help-form__input {
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .help-form__secondary-btn-wrapper {
+        margin-top: 25px;
+    }
+    /*============== /help ==============*/
+
+    /*============== contacts ==============*/
+    .section-contacts .section-inner {
+        padding: 25px 0;
+    }
+    .section-contacts-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-contacts-content__map {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-item__content {
+        justify-content: center;
+    }
+    /*============== /contacts ==============*/
+
+    /*============== footer ==============*/
+    .section-footer {
+        height: 80px;
+    }
+
+    .section-footer .section-inner {
+        width: 100%;
+    }
+
+    .section-footer-rights,
+    .section-footer-politics {
+        font-size: 8px;
+        text-align: center;
+    }
+
+    .section-footer .logo {
+        font-size: 16px;
+    }
+    /*============== /footer ==============*/
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    button {
+        font-size: 14px;
+    }
+
+    .title {
+        font-family: 'Oswald', sans-serif;
+        font-size: 46px;
+        line-height: 115%;
+        font-weight: bold;
+    }
+
+    .section-outer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .toggleNavBtn {
+        font-size: 24px;
+        display: block;
+        position: absolute;
+        z-index: 15;
+        right: 20px;
+        top: 20px;
+    }
+
+    /*============== /header ==============*/
+    .navbar {
+        z-index: 10;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 0;
+        margin-top: 15px;
+        background: linear-gradient(0deg, rgba(6, 27, 40, 0.92), rgba(6, 27, 40, 0.92));
+        border-radius: 5px;
+    }
+
+    .navbar * {
+        margin-bottom: 10px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-aside {
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .navbar-aside * {
+        margin-right: 10px;
+    }
+
+    .navbar-aside__phone {
+        margin-right: 10px;
+    }
+
+    .section-header-content__title {
+        font-size: 72px;
+        line-height: 100px;
+    }
+    /*============== /header ==============*/
+
+    /*============== map ==============*/
+    .section-map .section-inner {
+        padding: 50px 0;
+    }
+
+    .section-map-content__title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .section-map-content__text {
+        margin-bottom: 20px;
+    }
+    /*============== /map ==============*/
+
+    /*============== tours ==============*/
+    .section-tours .section-inner {
+        padding: 50px 0;
+    }
+
+    .section-tours-content {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-tours-title {
+        text-align: center;
+    }
+
+    .tour-card {
+        width: auto;
+        height: 180px;
+    }
+
+    .tour-card-container {
+        padding: 10px;
+    }
+
+    .tour-card + .tour-card {
+        margin-left: 10px;
+    }
+
+    .tour-location-wrapper__location {
+        font-size: 14px;
+    }
+
+    .tour-info__heading {
+        margin-bottom: 15px;
+    }
+
+    .tour-info-data-wrapper {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .tour-info-data-wrapper div {
+        text-align: center;
+    }
+
+    .tour-info-data__height {
+        padding-right: 5px;
+    }
+
+    .tour-info-data__days {
+        padding: 0 5px;
+    }
+
+    .tour-info-data__price {
+        padding-left: 5px;
+    }
+
+    .tour-info__difficulty {
+        font-size: 14px;
+    }
+    /*============== /tours ==============*/
+
+    /*============== russia ==============*/
+    .section-russia {
+        height: 540px;
+    }
+
+    .section-russia-content__table tbody td {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    /*============== /russia ==============*/
+
+    /*============== blog =================*/
+    .section-blog .section-inner {
+        padding: 50px 0;
+    }
+
+    .section-blog-content__list-wrapper {
+        margin-right: 30px;
+    }
+
+    .section-blog-content__list-item {
+        padding: 5px;
+        width: 200px;
+    }
+
+    .section-blog-content__list-item__title {
+        font-size: 14px;
+    }
+    /*============== /blog =================*/
+
+    /*============== help =================*/
+    .section-help {
+        padding: 0;
+    }
+
+    .section-help-content {
+        padding: 20px;
+    }
+
+    .section-help-content__subtitle {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    .help-form__input {
+        height: 50px;
+    }
+
+    .help-form__secondary-btn-wrapper {
+        margin-top: 20px;
+    }
+    /*============== /help =================*/
+
+    /*============== contacts =================*/
+    .section-contacts .section-inner {
+        padding: 50px 0;
+    }
+    /*============== /contacts =================*/
+
+    /*============== footer ==============*/
+    .section-footer .section-inner {
+        width: 100%;
+    }
+
+    .section-footer-rights,
+    .section-footer-politics {
+        font-size: 14px;
+    }
+    /*============== /footer ==============*/
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+    .section-outer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+
+    /*============== header ==============*/
+    .toggleNavBtn {
+        display: block;
+    }
+
+    .navbar {
+        font-size: 14px;
+        display: none;
+    }
+
+    .navbar .logo {
+        margin-right: 50px;
+    }
+
+    .navbar-nav a,
+    .navbar-aside__phone,
+    .navbar-aside__search {
+        margin-right: 15px;
+    }
+    /*============== /header ==============*/
+
+    /*============== map ==============*/
+    .section-map .section-inner {
+        flex-direction: column;
+        padding: 70px 0;
+    }
+
+    .section-map-content__text {
+        margin-top: 0;
+        font-size: 16px;
+    }
+    /*============== /map ==============*/
+
+    /*============== tours ==============*/
+    .section-tours .section-inner {
+        padding: 70px 0;
+    }
+
+    .section-tours-title {
+        margin-bottom: 40px;
+    }
+
+    .tour-card + .tour-card {
+        margin-left: 15px;
+    }
+
+    .tour-card {
+        height: 260px;
+    }
+
+    .tour-card-container {
+        padding: 15px;
+    }
+
+    .tour-info__heading {
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+
+    .tour-info-data-wrapper div {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .tour-info-data__height {
+        padding-right: 5px;
+    }
+
+    .tour-info-data__days {
+        padding: 0 5px;
+    }
+
+    .tour-info-data__price {
+        padding-left: 5px;
+    }
+    /*============== /tours ==============*/
+
+    /*============== russia ==============*/
+    .section-russia .section-inner {
+        padding: 50px 135px;
+    }
+
+    .section-russia-subtitle {
+        font-size: 16px;
+    }
+
+    .section-russia-content__table thead td {
+        font-size: 16px;
+    }
+
+    .section-russia-content__table tbody td {
+        font-size: 18px;
+    }
+    /*============== /russia ==============*/
+
+    /*============== blog ==============*/
+
+    .section-blog-content__list-item {
+        width: 250px;
+        padding: 10px;
+    }
+
+    .section-blog-content__list-item__date {
+        font-size: 13px;
+    }
+
+    .section-blog-content__list-item__title {
+        font-size: 15px;
+    }
+
+    .blog-content-article__title {
+        font-size: 18px;
+    }
+
+    .blog-content-article__date {
+        font-size: 13px;
+    }
+
+    .blog-content-article__text {
+        font-size: 14px;
+    }
+    /*============== /blog ==============*/
+
+    /*============== help ==============*/
+    .section-help-content {
+        padding: 40px 30px 40px 49px;
+    }
+
+    .section-help-content__title {
+        margin-bottom: 20px;
+    }
+
+    .help-form__input {
+        font-size: 16px;
+    }
+
+    .help-form__secondary-btn-wrapper {
+        margin-top: 25px;
+    }
+    /*============== /help ==============*/
+
+    /*============== contacts ==============*/
+    .section-contacts .section-inner {
+        padding: 70px 55px;
+    }
+
+    .contact-item__type {
+        font-size: 16px;
+    }
+
+    .contact-item__content {
+        font-size: 18px;
+    }
+    /*============== /contacts ==============*/
+
+    /*============== footer ==============*/
+    .section-footer .section-inner {
+        margin: 0 50px;
+    }
+
+    .section-footer .logo {
+        font-size: 18px;
+    }
+    /*============== /footer ==============*/
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .title {
+        font-size: 52px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    /*============== header ==============*/
+    .section-header .section-inner {
+        padding: 40px 60px;
+    }
+
+    .toggleNavBtn {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        font-size: 16px;
+        justify-content: space-between;
+        align-items: center;
+        background: none;
+        padding: 0;
+        position: relative;
+    }
+
+    .navbar .logo {
+        margin-right: 100px;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+        margin-bottom: 0;
+        align-items: center;
+    }
+
+    .navbar-aside {
+        margin-bottom: 0;
+    }
+
+    .navbar-nav a,
+    .navbar-aside__phone,
+    .navbar-aside__search {
+        text-align: left;
+        margin-right: 30px;
+
+    }
+
+    .section-header-content__title {
+        font-size: 98px;
+    }
+    /*============== /header ==============*/
+
+    /*============== map ==============*/
+    .section-map .section-inner {
+        display: flex;
+        flex-direction: row;
+        padding-top: 140px;
+        padding-bottom: 50px;
+    }
+
+    .section-map-content__title {
+        font-size: 52px;
+        text-align: left;
+    }
+
+    .section-map-content__text {
+        margin-bottom: 0;
+        margin-top: 50px;
+        font-size: 18px;
+        line-height: 150%;
+    }
+    /*============== /map ==============*/
+
+    /*============== tours ==============*/
+    .section-tours .section-inner {
+        padding: 120px 0;
+    }
+
+    .section-tours-title {
+        font-size: 52px;
+        margin-bottom: 80px;
+    }
+
+    .tour-card + .tour-card {
+        margin-left: 30px;
+    }
+
+    .tour-card {
+        width: 370px;
+        height: 326px;
+    }
+
+    .tour-info__heading {
+        font-size: 26px;
+        margin-bottom: 24px;
+    }
+
+    .tour-info-data-wrapper div {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+
+    .tour-info-data__height {
+        padding-right: 10px;
+    }
+
+    .tour-info-data__days {
+        padding: 0 10px;
+    }
+
+    .tour-info-data__price {
+        padding-left: 10px;
+    }
+
+    .tour-info__difficulty {
+        font-size: 16px;
+    }
+    /*============== /tours ==============*/
+
+    /*============== russia ==============*/
+    .section-russia {
+        height: 757px;
+    }
+
+    .section-russia .section-inner {
+        padding: 110px 270px;
+    }
+
+    .section-russia-title {
+        font-size: 52px;
+    }
+
+    .section-russia-subtitle {
+        font-size: 18px;
+    }
+
+    .section-russia-content__table thead td {
+        font-size: 18px;
+    }
+
+    .section-russia-content__table tbody td {
+        font-size: 22px;
+        height: 60px;
+    }
+    /*============== /russia ==============*/
+
+    /*============== blog ==============*/
+    .section-blog .section-inner {
+        padding: 100px 0;
+    }
+
+    .section-blog-title {
+        font-size: 52px;
+    }
+
+    .section-blog-content__list-item {
+        width: 400px;
+        padding: 20px;
+    }
+
+    .section-blog-content__list-item__date {
+        font-size: 14px;
+    }
+
+    .section-blog-content__list-item__title {
+        font-size: 18px;
+    }
+
+    .blog-content-article__title {
+        font-size: 22px;
+    }
+
+    .blog-content-article__date {
+        font-size: 14px;
+    }
+
+    .blog-content-article__text {
+        font-size: 16px;
+    }
+    /*============== /blog ==============*/
+
+    /*============== help ==============*/
+    .section-help {
+        padding: 0;
+    }
+
+    .section-help-content {
+        padding: 80px 60px 80px 98px;
+    }
+
+    .section-help-content__title {
+        font-size: 52px;
+        margin-bottom: 40px;
+    }
+
+    .section-help-content__subtitle {
+        font-size: 16px;
+    }
+
+    .help-form__input {
+        height: 60px;
+        font-size: 22px;
+        line-height: 150%;
+    }
+
+    .help-form__secondary-btn-wrapper {
+        margin-top: 45px;
+    }
+    /*============== /help ==============*/
+
+    /*============== contacts ==============*/
+    .section-contacts .section-inner {
+        padding: 140px 98px;
+    }
+
+    .section-contacts-content__items-title {
+        font-size: 52px;
+    }
+
+    .contact-item__type {
+        font-size: 18px;
+    }
+
+    .contact-item__content {
+        font-size: 22px;
+    }
+    /*============== /contacts ==============*/
+
+    /*============== footer ==============*/
+    .section-footer .section-inner {
+        width: 1170px;
+        margin: 0 auto;
+    }
+
+    .section-footer .logo {
+        font-size: 24px;
+    }
+
+    .section-footer div {
+        font-size: 16px;
+    }
+    /*============== /footer ==============*/
+}
